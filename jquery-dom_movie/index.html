@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <title>Movies app</title>
+  </head>
+  <body>
+    <div>
+      <h1>THE MOVIE APP!</h1>
+      <div>
+        <form id="new-movie-form">
+          <div>
+            <label for="title">MOVIE TITLE</label>
+            <input id="title" type="textbox" />
+          </div>
+
+          <div>
+            <label for="rating">RATING</label>
+            <input
+              id="rating"
+              type="number"
+              required
+              min="0"
+              max="10"
+              class="rating"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <br />
+    <table id="main-table">
+      <thead>
+        <tr>
+          <th id="title" scope="col">Movie</th>
+          <th id="rating" scope="col">Rating</th>
+          <th id="delete-button" scope="col">Remove?</th>
+        </tr>
+      </thead>
+      <tbody id="movie-body"></tbody>
+    </table>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
